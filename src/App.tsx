@@ -91,8 +91,8 @@ export default function App() {
               <FileText size={22} />
             </div>
             <div>
-              <p className="instruction-title">How students should use this page</p>
-              <p className="instruction-subtitle">Fill in the content, keep the overall layout and pacing.</p>
+              <p className="instruction-title">How to use WaNBRC Train</p>
+              <p className="instruction-subtitle">A role-based training compliance dashboard — built for IACUC, USDA, and AALAC inspection readiness.</p>
             </div>
           </div>
 
@@ -124,7 +124,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Problem</p>
-                <h3>What problem are you trying to solve?</h3>
+                <h3>The Problem</h3>
               </div>
             </div>
             <p className="body-copy">{projectData.problemStatement}</p>
@@ -151,7 +151,7 @@ export default function App() {
               </div>
               <div>
                 <p className="dark-eyebrow">Solution</p>
-                <h3>What are you building?</h3>
+                <h3>The Solution</h3>
               </div>
             </div>
             <p className="dark-copy">{projectData.solutionSummary}</p>
@@ -167,11 +167,11 @@ export default function App() {
 
         <section>
           <SectionHeader
-            eyebrow="Team"
-            title="Show who built it and what each person owned"
-            description="This section should read like a real team build, not just a list of names. Make ownership specific."
+            eyebrow="Builder"
+            title="About the Builder"
+            description="WaNBRC Train was individually designed and built by Miranda S Grato as a live compliance tool for her workplace at the University of Washington."
           />
-          <div className="card-grid two-up">
+          <div className="card-grid">
             {projectData.members.map((member) => (
               <div key={`${member.name}-${member.role}`} className="surface padded-card team-card">
                 <div className="team-avatar">{member.name.replace(/[[\]]/g, '').split(' ').filter(Boolean).map((part) => part[0]).join('').slice(0, 2).toUpperCase() || 'TM'}</div>
@@ -188,8 +188,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Gallery"
-            title="Add screenshots, diagrams, evidence, and visual proof"
-            description="Students can place screenshots, diagrams, PDFs, or photos inside public/project-assets and reference them from the data file."
+            title="Screenshots and Demo"
+            description="Live views from the deployed WaNBRC Train application across all three user roles."
           />
           <div className="card-grid two-up">
             {projectData.gallery.map((item) =>
@@ -223,7 +223,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Stack</p>
-                <h3>Make the stack easy to scan</h3>
+                <h3>Technical Stack</h3>
               </div>
             </div>
             <div className="stack-list">
@@ -253,7 +253,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Methods</p>
-                <h3>Call out the techniques quickly</h3>
+                <h3>Key Methods</h3>
               </div>
             </div>
             <div className="method-grid">
@@ -275,8 +275,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Product"
-            title="Break the experience into feature cards"
-            description="Each card should explain what the user does, what the system does, and what concrete value the interaction creates."
+            title="Key Features"
+            description="Five core capabilities built around the compliance needs of WaNBRC employees, supervisors, and coordinators."
           />
           <div className="card-grid two-up">
             {projectData.features.map((feature) => (
@@ -307,7 +307,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Architecture</p>
-                <h3>Explain how the system works</h3>
+                <h3>System Architecture</h3>
               </div>
             </div>
             <div className="architecture-list">
@@ -330,7 +330,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Code Highlights</p>
-                <h3>Paste short code samples if they help</h3>
+                <h3>Code Highlights</h3>
               </div>
             </div>
             <div className="code-list">
@@ -360,7 +360,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Roadmap</p>
-                <h3>Show momentum and next steps</h3>
+                <h3>Roadmap</h3>
               </div>
             </div>
             <div className="roadmap-list">
@@ -387,7 +387,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Risks</p>
-                <h3>Be honest about constraints</h3>
+                <h3>Risks and Constraints</h3>
               </div>
             </div>
             <div className="risk-list">
@@ -403,11 +403,10 @@ export default function App() {
 
         <section className="closing-card">
           <div>
-            <p className="dark-eyebrow">Closing Section</p>
-            <h2>End with a clear business case</h2>
+            <p className="dark-eyebrow">Why WaNBRC Train Matters</p>
+            <h2>Compliance should be visible in real time — not reconstructed under pressure</h2>
             <p>
-              The strongest project pages do not stop at “here is our interface.” They explain why the idea matters,
-              how the system is built, what evidence exists today, and what should happen next.
+              WaNBRC Train was built around a real operational gap: the most dangerous moment for a compliance-dependent organization is an unannounced inspection when records are scattered across spreadsheets and email threads. Every feature — the role dashboards, automated assignment trigger, approval workflow, and Agent Train — exists to make the WaNBRC perpetually inspection-ready.
             </p>
           </div>
 
@@ -417,28 +416,28 @@ export default function App() {
                 <Users size={18} />
               </div>
               <h3>Who benefits?</h3>
-              <p>State the user, customer, or stakeholder group in plain language.</p>
+              <p>WaNBRC employees, supervisors, and the training coordinator — plus the organization as a whole during IACUC, USDA, and AALAC reviews.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Target size={18} />
               </div>
               <h3>What changes?</h3>
-              <p>Explain the operational, financial, or human outcome the project improves.</p>
+              <p>Manual data entry is replaced by real-time self-service. The coordinator shifts from record-keeper to compliance analyst — using Agent Train to generate reports instead of building them by hand.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Layers3 size={18} />
               </div>
               <h3>Why this build?</h3>
-              <p>Call out the architecture or approach choices that make the solution credible.</p>
+              <p>RLS on every table and RoleGuard on every route were chosen specifically for a compliance use case where data leakage across roles is not just a UX problem — it is a regulatory risk.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Rocket size={18} />
               </div>
               <h3>What is next?</h3>
-              <p>Name the next test, launch step, or milestone that turns the prototype into a stronger product.</p>
+              <p>Formal WaNBRC adoption pending UW IT review, UW HR system integration for real-time role sync, and expanding Agent Train to generate IACUC and USDA inspection report templates.</p>
             </div>
           </div>
         </section>

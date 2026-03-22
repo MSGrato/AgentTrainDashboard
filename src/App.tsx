@@ -437,6 +437,10 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <footer className="site-footer">
+          <p>Template by <strong>Leonard Boussioux</strong> &middot; Built with <strong>Claude Code</strong></p>
+        </footer>
       </div>
     </div>
   );

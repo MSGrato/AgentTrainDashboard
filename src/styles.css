@@ -779,3 +779,19 @@ select {
     font-size: 1.4rem;
   }
 }
+
+/* ── Site Footer ── */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.8rem;
+  color: #888;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+}
+
+.site-footer strong {
+  color: #555;
+  font-weight: 600;
+}
+

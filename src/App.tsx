@@ -51,10 +51,6 @@ export default function App() {
       <div className="page-container">
         <section className="hero surface hero-surface">
           <div className="hero-copy">
-            <div className="template-pill">
-              <Sparkles size={14} />
-              Plug-and-Play Project Page
-            </div>
             <h1>{projectData.title}</h1>
             <p className="owner-line">{projectData.ownerLine}</p>
             <p className="hero-subtitle">{projectData.subtitle}</p>

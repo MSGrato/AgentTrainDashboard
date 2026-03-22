@@ -89,7 +89,7 @@ export const projectData: ProjectPageData = {
 
   title: 'WaNBRC Train',
   subtitle: 'AI-powered training records management dashboard for real-time compliance at the Washington National Biomedical Research Center.',
-  ownerLine: 'Miranda S Grato · MSIS 549b · Individual Project',
+  ownerLine: 'Miranda S Grato · Individual Project',
 
   executiveSummary:
     'The Washington National Biomedical Research Center operates under layered regulatory requirements — biannual IACUC inspections, random USDA audits, AALAC accreditation reviews, and UW institutional training mandates. Despite this pressure, training management was entirely manual: employees submitted completions to a coordinator who entered them by hand, meaning live compliance status was never available. WaNBRC Train replaces that bottleneck with a real-time, role-based web application. Employees track and submit their own trainings. Supervisors approve their team\'s completions in real time. Coordinators access a full administrative view and use Agent Train — an AI chat agent — to generate custom compliance reports on demand. The WaNBRC has expressed interest in adopting the tool for actual organizational use.',

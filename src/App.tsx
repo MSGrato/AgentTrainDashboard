@@ -439,7 +439,7 @@ export default function App() {
         </section>
 
         <footer className="site-footer">
-          <p>Template by <strong>Leonard Boussioux</strong> &middot; Built with <strong>Claude Code</strong></p>
+          <p>Template by <strong>Leonard Boussioux</strong> &middot; Site by <strong>Miranda S Grato</strong> &middot; Built with <strong>Claude Code</strong></p>
         </footer>
       </div>
     </div>
